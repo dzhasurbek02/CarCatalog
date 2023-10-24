@@ -25,6 +25,6 @@ public class GetUserQueryHandler : IRequestHandler<GetUserQuery, UserQueryViewMo
                    .Where(u => u.Id == request.Id)
                    .ProjectTo<UserQueryViewModel>(_mapper.ConfigurationProvider)
                    .FirstOrDefaultAsync(cancellationToken)
-               ?? throw new NotFoundException("Список пользователей пуст!");
+               ?? throw new NotFoundException("Пользователь не найден!");
     }
 }
