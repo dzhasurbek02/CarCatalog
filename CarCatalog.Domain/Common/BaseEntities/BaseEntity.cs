@@ -1,4 +1,4 @@
-namespace CarCatalog.Domain.Common;
+namespace CarCatalog.Domain.Common.BaseEntities;
 
 public class BaseEntity
 {
