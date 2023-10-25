@@ -1,6 +1,6 @@
 namespace CarCatalog.Domain.Common.BaseEntities;
 
-public class BaseEntity
+public abstract class BaseEntity
 {
     public Guid Id { get; set; }
 }

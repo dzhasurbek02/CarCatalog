@@ -1,6 +1,6 @@
 namespace CarCatalog.Domain.Common.BaseEntities;
 
-public class AuditableBaseEntity : BaseEntity
+public abstract class AuditableBaseEntity : BaseEntity
 {
     public DateTime CreatedDateTime { get; set; }
 
