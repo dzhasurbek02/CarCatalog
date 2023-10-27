@@ -1,4 +1,5 @@
 using CarCatalog.Domain.Entities;
+using CarCatalog.Persistence.Seeders;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
@@ -13,5 +14,7 @@ public class FuelTypeConfiguration : IEntityTypeConfiguration<FuelType>
         builder.Property(ft => ft.Name)
             .IsRequired()
             .HasMaxLength(30);
+        
+        FuelTypeSeeder.SeedFuelType(builder);
     }
 }
