@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace CarCatalog.Persistence.Seeders;
 
-public class TransmissionSeeder
+public static class TransmissionSeeder
 {
     public static void SeedTransmission(EntityTypeBuilder<Transmission> builder)
     {

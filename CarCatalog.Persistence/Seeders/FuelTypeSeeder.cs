@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace CarCatalog.Persistence.Seeders;
 
-public class FuelTypeSeeder
+public static class FuelTypeSeeder
 {
     public static void SeedFuelType(EntityTypeBuilder<FuelType> builder)
     {

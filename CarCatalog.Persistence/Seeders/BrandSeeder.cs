@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace CarCatalog.Persistence.Seeders;
 
-public class BrandSeeder
+public static class BrandSeeder
 {
     public static void SeedBrands(EntityTypeBuilder<Brand> builder)
     {

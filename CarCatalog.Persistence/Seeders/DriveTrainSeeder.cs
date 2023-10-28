@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace CarCatalog.Persistence.Seeders;
 
-public class DriveTrainSeeder
+public static class DriveTrainSeeder
 {
     public static void SeedDriveTrain(EntityTypeBuilder<DriveTrain> builder)
     {

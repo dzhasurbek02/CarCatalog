@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace CarCatalog.Persistence.Seeders;
 
-public class BodyStyleSeeder
+public static class BodyStyleSeeder
 {
     public static void SeedBodyStyles(EntityTypeBuilder<BodyStyle> builder)
     {

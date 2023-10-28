@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace CarCatalog.Persistence.Seeders;
 
-public class CarColorSeeder
+public static class CarColorSeeder
 {
     public static void SeedCarColors(EntityTypeBuilder<CarColor> builder)
     {
