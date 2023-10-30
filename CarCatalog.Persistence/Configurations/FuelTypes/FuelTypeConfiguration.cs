@@ -15,6 +15,6 @@ public class FuelTypeConfiguration : IEntityTypeConfiguration<FuelType>
             .IsRequired()
             .HasMaxLength(30);
         
-        FuelTypeSeeder.SeedFuelType(builder);
+        FuelTypeSeeder.SeedFuelTypes(builder);
     }
 }

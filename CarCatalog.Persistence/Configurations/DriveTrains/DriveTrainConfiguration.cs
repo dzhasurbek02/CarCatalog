@@ -15,6 +15,6 @@ public class DriveTrainConfiguration : IEntityTypeConfiguration<DriveTrain>
             .IsRequired()
             .HasMaxLength(30);
         
-        DriveTrainSeeder.SeedDriveTrain(builder);
+        DriveTrainSeeder.SeedDriveTrains(builder);
     }
 }

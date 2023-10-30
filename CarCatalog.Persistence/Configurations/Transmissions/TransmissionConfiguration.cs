@@ -15,6 +15,6 @@ public class TransmissionConfiguration : IEntityTypeConfiguration<Transmission>
             .IsRequired()
             .HasMaxLength(30);
         
-        TransmissionSeeder.SeedTransmission(builder);
+        TransmissionSeeder.SeedTransmissions(builder);
     }
 }

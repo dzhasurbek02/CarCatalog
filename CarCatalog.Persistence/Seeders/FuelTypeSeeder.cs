@@ -6,7 +6,7 @@ namespace CarCatalog.Persistence.Seeders;
 
 public static class FuelTypeSeeder
 {
-    public static void SeedFuelType(EntityTypeBuilder<FuelType> builder)
+    public static void SeedFuelTypes(EntityTypeBuilder<FuelType> builder)
     {
         builder.HasData(
             new FuelType { Id = FuelTypeEnum.Petrol.Value, Name = FuelTypeEnum.Petrol.Name },

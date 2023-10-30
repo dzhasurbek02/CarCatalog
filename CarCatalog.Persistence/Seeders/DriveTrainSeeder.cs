@@ -6,7 +6,7 @@ namespace CarCatalog.Persistence.Seeders;
 
 public static class DriveTrainSeeder
 {
-    public static void SeedDriveTrain(EntityTypeBuilder<DriveTrain> builder)
+    public static void SeedDriveTrains(EntityTypeBuilder<DriveTrain> builder)
     {
         builder.HasData(
             new DriveTrain { Id = DriveTrainEnum.FWD.Value, Name = DriveTrainEnum.FWD.Name },

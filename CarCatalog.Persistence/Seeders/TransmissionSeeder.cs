@@ -6,7 +6,7 @@ namespace CarCatalog.Persistence.Seeders;
 
 public static class TransmissionSeeder
 {
-    public static void SeedTransmission(EntityTypeBuilder<Transmission> builder)
+    public static void SeedTransmissions(EntityTypeBuilder<Transmission> builder)
     {
         builder.HasData(
             new Transmission { Id = TransmissionEnum.Automatic.Value, Name = TransmissionEnum.Automatic.Name },
