@@ -1,7 +1,6 @@
-using CarCatalog.Domain.Entities;
 using MediatR;
 
-namespace CarCatalog.Application.Users.Queries.GetUser;
+namespace CarCatalog.Application.Features.Users.Queries.GetUser;
 
 public class GetUserQuery : IRequest<UserQueryViewModel>
 {

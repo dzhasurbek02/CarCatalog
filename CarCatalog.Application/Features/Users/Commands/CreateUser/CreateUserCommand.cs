@@ -1,6 +1,6 @@
 using MediatR;
 
-namespace CarCatalog.Application.Users.Commands.CreateUser;
+namespace CarCatalog.Application.Features.Users.Commands.CreateUser;
 
 public class CreateUserCommand : IRequest<Guid>
 {

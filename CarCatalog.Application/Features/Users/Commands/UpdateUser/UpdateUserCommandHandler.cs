@@ -4,7 +4,7 @@ using CarCatalog.Application.Common.Interfaces;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
-namespace CarCatalog.Application.Users.Commands.UpdateUser;
+namespace CarCatalog.Application.Features.Users.Commands.UpdateUser;
 
 public class UpdateUserCommandHandler : IRequestHandler<UpdateUserCommand>
 {

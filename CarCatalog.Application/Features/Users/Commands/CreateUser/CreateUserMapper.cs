@@ -1,7 +1,7 @@
 using AutoMapper;
 using CarCatalog.Domain.Entities;
 
-namespace CarCatalog.Application.Users.Commands.CreateUser;
+namespace CarCatalog.Application.Features.Users.Commands.CreateUser;
 
 public class CreateUserMapper : Profile
 {

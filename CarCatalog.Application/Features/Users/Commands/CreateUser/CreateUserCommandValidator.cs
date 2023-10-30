@@ -1,6 +1,6 @@
 using FluentValidation;
 
-namespace CarCatalog.Application.Users.Commands.CreateUser;
+namespace CarCatalog.Application.Features.Users.Commands.CreateUser;
 
 public class CreateUserCommandValidator : AbstractValidator<CreateUserCommand>
 {

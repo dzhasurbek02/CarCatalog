@@ -1,8 +1,8 @@
-using CarCatalog.Application.Users.Commands.CreateUser;
-using CarCatalog.Application.Users.Commands.DeleteUser;
-using CarCatalog.Application.Users.Commands.UpdateUser;
-using CarCatalog.Application.Users.Queries.GetAllUsers;
-using CarCatalog.Application.Users.Queries.GetUser;
+using CarCatalog.Application.Features.Users.Commands.CreateUser;
+using CarCatalog.Application.Features.Users.Commands.DeleteUser;
+using CarCatalog.Application.Features.Users.Commands.UpdateUser;
+using CarCatalog.Application.Features.Users.Queries.GetAllUsers;
+using CarCatalog.Application.Features.Users.Queries.GetUser;
 using CarCatalog.Domain.Entities;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;

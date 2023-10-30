@@ -1,7 +1,7 @@
 using CarCatalog.Application.Common.Pagination;
 using MediatR;
 
-namespace CarCatalog.Application.Users.Queries.GetAllUsers;
+namespace CarCatalog.Application.Features.Users.Queries.GetAllUsers;
 
 public class GetAllUsersQuery : IRequest<PaginatedList<GetAllUsersViewModel>>
 {

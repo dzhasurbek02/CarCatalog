@@ -5,7 +5,7 @@ using CarCatalog.Application.Common.Pagination;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
-namespace CarCatalog.Application.Users.Queries.GetAllUsers;
+namespace CarCatalog.Application.Features.Users.Queries.GetAllUsers;
 
 public class GetAllUsersQueryHandler : IRequestHandler<GetAllUsersQuery, PaginatedList<GetAllUsersViewModel>>
 {

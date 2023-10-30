@@ -1,6 +1,6 @@
 using FluentValidation;
 
-namespace CarCatalog.Application.Users.Commands.UpdateUser;
+namespace CarCatalog.Application.Features.Users.Commands.UpdateUser;
 
 public class UpdateUserCommandValidator : AbstractValidator<UpdateUserCommand>
 {

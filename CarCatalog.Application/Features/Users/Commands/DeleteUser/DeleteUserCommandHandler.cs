@@ -3,7 +3,7 @@ using CarCatalog.Application.Common.Interfaces;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
-namespace CarCatalog.Application.Users.Commands.DeleteUser;
+namespace CarCatalog.Application.Features.Users.Commands.DeleteUser;
 
 public class DeleteUserCommandHandler : IRequestHandler<DeleteUserCommand>
 {

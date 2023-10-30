@@ -1,6 +1,6 @@
 using MediatR;
 
-namespace CarCatalog.Application.Users.Commands.DeleteUser;
+namespace CarCatalog.Application.Features.Users.Commands.DeleteUser;
 
 public class DeleteUserCommand : IRequest
 {

@@ -1,6 +1,6 @@
-namespace CarCatalog.Application.Users.Queries.GetAllUsers;
+namespace CarCatalog.Application.Features.Users.Queries.GetUser;
 
-public class GetAllUsersViewModel
+public class UserQueryViewModel
 {
     public Guid Id { get; set; }
     

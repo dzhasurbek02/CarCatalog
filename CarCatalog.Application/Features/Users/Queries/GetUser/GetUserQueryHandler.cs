@@ -5,7 +5,7 @@ using CarCatalog.Application.Common.Interfaces;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
-namespace CarCatalog.Application.Users.Queries.GetUser;
+namespace CarCatalog.Application.Features.Users.Queries.GetUser;
 
 public class GetUserQueryHandler : IRequestHandler<GetUserQuery, UserQueryViewModel>
 {

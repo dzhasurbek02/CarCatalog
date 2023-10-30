@@ -1,6 +1,6 @@
 using MediatR;
 
-namespace CarCatalog.Application.Users.Commands.UpdateUser;
+namespace CarCatalog.Application.Features.Users.Commands.UpdateUser;
 
 public class UpdateUserCommand : IRequest
 {

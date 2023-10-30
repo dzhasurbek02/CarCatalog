@@ -3,7 +3,7 @@ using CarCatalog.Application.Common.Interfaces;
 using CarCatalog.Domain.Entities;
 using MediatR;
 
-namespace CarCatalog.Application.Users.Commands.CreateUser;
+namespace CarCatalog.Application.Features.Users.Commands.CreateUser;
 
 public class CreateUserCommandHandler : IRequestHandler<CreateUserCommand, Guid>
 {
