@@ -24,8 +24,7 @@ public class GetAllFeaturesQueryHandler : IRequestHandler<GetAllFeaturesQuery, P
     {
         var query = _context.Features
             .AsNoTracking()
-            .ProjectTo<GetAllFeaturesQueryViewModel>(_mapper.ConfigurationProvider)
-                ?? throw new NotFoundException("Список фич пуст!");
+            .ProjectTo<GetAllFeaturesQueryViewModel>(_mapper.ConfigurationProvider);
 
         return await PaginatedList<GetAllFeaturesQueryViewModel>.CreateAsync(query, request.PageNumber, request.PageSize);
     }
