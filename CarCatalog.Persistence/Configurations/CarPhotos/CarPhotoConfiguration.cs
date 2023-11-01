@@ -11,7 +11,7 @@ public class CarPhotoConfiguration : IEntityTypeConfiguration<CarPhoto>
         builder.HasKey(p => p.Id);
         
         builder.HasOne<Car>(p => p.Car)
-            .WithMany(c => c.Photos)
+            .WithMany(c => c.CarPhotos)
             .HasForeignKey(p => p.CarId)
             .IsRequired()
             .OnDelete(DeleteBehavior.Cascade);
