@@ -2,11 +2,11 @@ using CarCatalog.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace CarCatalog.Persistence.Configurations.Photos;
+namespace CarCatalog.Persistence.Configurations.CarPhotos;
 
-public class PhotoConfiguration : IEntityTypeConfiguration<Photo>
+public class CarPhotoConfiguration : IEntityTypeConfiguration<CarPhoto>
 {
-    public void Configure(EntityTypeBuilder<Photo> builder)
+    public void Configure(EntityTypeBuilder<CarPhoto> builder)
     {
         builder.HasKey(p => p.Id);
         
@@ -17,7 +17,6 @@ public class PhotoConfiguration : IEntityTypeConfiguration<Photo>
             .OnDelete(DeleteBehavior.Cascade);
 
         builder.Property(p => p.PhotoURL)
-            .IsRequired()
-            .HasMaxLength(255);
+            .IsRequired();
     }
 }

@@ -37,7 +37,7 @@ public class Car : AuditableBaseEntity
     
     public float Price { get; set; }
     
-    public List<Photo>? Photos { get; set; }
+    public List<CarPhoto>? Photos { get; set; }
     
     public List<CarFeature>? CarFeatures { get; set; }
 }

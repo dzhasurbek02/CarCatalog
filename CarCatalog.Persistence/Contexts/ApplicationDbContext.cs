@@ -27,7 +27,7 @@ public class ApplicationDbContext : DbContext, IApplicationDbContext
     
     public DbSet<FuelType> FuelTypes { get; set; }
     
-    public DbSet<Photo> Photos { get; set; }
+    public DbSet<CarPhoto> Photos { get; set; }
     
     public DbSet<Transmission> Transmissions { get; set; }
     public DbSet<User> Users { get; set; }

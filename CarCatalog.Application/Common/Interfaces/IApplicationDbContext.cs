@@ -23,7 +23,7 @@ public interface IApplicationDbContext
     
     public DbSet<FuelType> FuelTypes { get; set; }
     
-    public DbSet<Photo> Photos { get; set; }
+    public DbSet<CarPhoto> Photos { get; set; }
     
     public DbSet<Transmission> Transmissions { get; set; }
     
