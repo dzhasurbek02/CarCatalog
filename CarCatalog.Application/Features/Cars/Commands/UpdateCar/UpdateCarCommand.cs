@@ -1,6 +1,8 @@
+using MediatR;
+
 namespace CarCatalog.Application.Features.Cars.Commands.UpdateCar;
 
-public class UpdateCarCommand
+public class UpdateCarCommand : IRequest
 {
     public Guid Id { get; set; }
     
