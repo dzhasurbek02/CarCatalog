@@ -1,10 +1,10 @@
 using FluentValidation;
 
-namespace CarCatalog.Application.Features.Photos.Commands.CreatePhoto;
+namespace CarCatalog.Application.Features.CarPhotos.Commands.CreateCarPhoto;
 
-public class CreatePhotoCommandValidator : AbstractValidator<CreatePhotoCommand>
+public class CreateCarPhotoCommandValidator : AbstractValidator<CreateCarPhotoCommand>
 {
-    public CreatePhotoCommandValidator()
+    public CreateCarPhotoCommandValidator()
     {
         RuleFor(t => t.CarId)
             .Cascade(CascadeMode.Stop)
