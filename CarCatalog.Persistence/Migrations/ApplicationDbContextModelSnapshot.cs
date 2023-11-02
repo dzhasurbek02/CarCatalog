@@ -252,6 +252,38 @@ namespace CarCatalog.Persistence.Migrations
                     b.ToTable("CarModels");
                 });
 
+            modelBuilder.Entity("CarCatalog.Domain.Entities.CarPhoto", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<Guid>("CarId")
+                        .HasColumnType("uuid");
+
+                    b.Property<Guid>("CreatedByUserId")
+                        .HasColumnType("uuid");
+
+                    b.Property<DateTime>("CreatedDateTime")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("PhotoURL")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<Guid?>("UpdatedByUserId")
+                        .HasColumnType("uuid");
+
+                    b.Property<DateTime?>("UpdatedDateTime")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CarId");
+
+                    b.ToTable("Photos");
+                });
+
             modelBuilder.Entity("CarCatalog.Domain.Entities.DriveTrain", b =>
                 {
                     b.Property<Guid>("Id")
@@ -339,39 +371,6 @@ namespace CarCatalog.Persistence.Migrations
                             Id = new Guid("a8627f4a-283d-4169-841d-003edeb29759"),
                             Name = "Дизель"
                         });
-                });
-
-            modelBuilder.Entity("CarCatalog.Domain.Entities.Photo", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid");
-
-                    b.Property<Guid>("CarId")
-                        .HasColumnType("uuid");
-
-                    b.Property<Guid>("CreatedByUserId")
-                        .HasColumnType("uuid");
-
-                    b.Property<DateTime>("CreatedDateTime")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.Property<string>("PhotoURL")
-                        .IsRequired()
-                        .HasMaxLength(255)
-                        .HasColumnType("character varying(255)");
-
-                    b.Property<Guid?>("UpdatedByUserId")
-                        .HasColumnType("uuid");
-
-                    b.Property<DateTime?>("UpdatedDateTime")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("CarId");
-
-                    b.ToTable("Photos");
                 });
 
             modelBuilder.Entity("CarCatalog.Domain.Entities.Transmission", b =>
@@ -520,10 +519,10 @@ namespace CarCatalog.Persistence.Migrations
                     b.Navigation("Brand");
                 });
 
-            modelBuilder.Entity("CarCatalog.Domain.Entities.Photo", b =>
+            modelBuilder.Entity("CarCatalog.Domain.Entities.CarPhoto", b =>
                 {
                     b.HasOne("CarCatalog.Domain.Entities.Car", "Car")
-                        .WithMany("Photos")
+                        .WithMany("CarPhotos")
                         .HasForeignKey("CarId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -545,7 +544,7 @@ namespace CarCatalog.Persistence.Migrations
                 {
                     b.Navigation("CarFeatures");
 
-                    b.Navigation("Photos");
+                    b.Navigation("CarPhotos");
                 });
 
             modelBuilder.Entity("CarCatalog.Domain.Entities.CarColor", b =>
