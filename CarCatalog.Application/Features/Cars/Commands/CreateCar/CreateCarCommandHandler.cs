@@ -21,6 +21,16 @@ public class CreateCarCommandHandler : IRequestHandler<CreateCarCommand, Guid>
         var car = _mapper.Map<Car>(request);
 
         _context.Cars.Add(car);
+        
+        var carFeatures = request.FeatureIds.Select(x => new CarFeature
+            {
+                CarId = car.Id,
+                FeatureId = x
+            })
+            .ToList();
+
+        _context.CarFeatures.AddRange(carFeatures);
+        
         await _context.SaveChangesAsync(cancellationToken);
 
         return car.Id;
