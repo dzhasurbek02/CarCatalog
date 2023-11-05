@@ -25,6 +25,6 @@ public class GetAllCarsMapper : Profile
             .ForMember(c => c.CarPhotos,
                 t => t.MapFrom(p => p.CarPhotos.Select(cp => cp.PhotoURL)))
             .ForMember(c => c.Features,
-                t => t.MapFrom(f => f.CarFeatures.Select(p => p.Feature)));
+                t => t.MapFrom(f => f.CarFeatures.Select(p => p.Feature.Name)));
     }
 }
