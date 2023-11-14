@@ -26,7 +26,7 @@ public class CarModelController : ControllerBase
         return Ok(await _mediator.Send(command));
     }
 
-    [HttpGet("{id}")]
+    [HttpGet("{id:guid}")]
     public async Task<ActionResult<CarModel>> GetCarModel([FromRoute] Guid id)
     {
         return Ok(await _mediator.Send(new GetCarModelQuery { Id = id }));
