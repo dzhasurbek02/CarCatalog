@@ -23,8 +23,8 @@ public class GetCarMapper : Profile
             .ForMember(c=>c.CarColorName,
                 t=> t.MapFrom(src=> $"{src.CarColor.Name}"))
             .ForMember(c => c.CarPhotos,
-                t => t.MapFrom(p => p.CarPhotos.Select(cp => cp.PhotoURL)))
+                t => t.MapFrom(p => p.CarPhotos!.Select(cp => cp.PhotoURL)))
             .ForMember(c => c.Features,
-                t => t.MapFrom(f => f.CarFeatures.Select(p => p.Feature.Name)));
+                t => t.MapFrom(f => f.CarFeatures!.Select(p => p.Feature.Name)));
     }
 }
