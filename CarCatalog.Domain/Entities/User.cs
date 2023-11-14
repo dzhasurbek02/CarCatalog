@@ -1,4 +1,4 @@
-using CarCatalog.Domain.Common;
+using CarCatalog.Domain.Common.BaseEntities;
 
 namespace CarCatalog.Domain.Entities;
 
